@@ -1,0 +1,21 @@
+Depono — Proprietary Copyright Notice
+
+Copyright (c) 2026 C-Tech Solutions LLC. All rights reserved.
+
+This repository distributes information and, when published, customer release
+artifacts for Depono. Public availability does not grant an open-source license
+to the Depono application or its source code. Rights to use the application are
+provided separately in the terms accompanying the applicable release or purchase.
+
+Except as permitted by applicable law, applicable GitHub terms, a separate
+written agreement, or the licenses of third-party materials, no permission is
+granted by this notice to modify, redistribute, sublicense, or create derivative
+works of C-Tech Solutions LLC's proprietary software or materials.
+
+Third-party software and materials retain their respective copyrights and
+licenses. This notice does not replace, restrict, or claim ownership of rights
+granted by those licenses. Consult the third-party notices supplied with each
+release.
+
+This notice is not the customer End User License Agreement and does not change
+existing customer license rights.
