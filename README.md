@@ -6,7 +6,7 @@ Formerly **Clio Companion**, Depono is proprietary Windows software from C-Tech 
 
 ## Downloads
 
-Depono v0.4.2 is being prepared as the first public release. No installer is published here yet. See [release information](RELEASE-NOTES.md).
+**Depono v0.4.2 is a public pilot for coordinated installation and update testing. General customer rollout is on hold.** See the [v0.4.2 release](https://github.com/C-Tech-Solutions/depono/releases/tag/v0.4.2) for downloads and [release information](RELEASE-NOTES.md) for scope.
 
 Depono targets Windows x64 and installs for the current Windows user. Normal installation and updates do not require administrator credentials; organizational policies may restrict installation or downloads.
 
@@ -14,7 +14,9 @@ Existing Clio Companion v0.4.0 users will need to install the first public Depon
 
 ## Updates and verification
 
-Approved stable releases will contain a signed setup executable, its SHA-256 checksum, signed update metadata and a Windows catalog. Depono verifies the catalog and installer publisher before applying updates. Download installers only from this repository's Releases page and verify the publisher is **C-Tech Solutions LLC**.
+Releases contain a signed setup executable, its SHA-256 checksum, update metadata and a signed Windows catalog authenticating that metadata. Depono verifies the catalog and installer publisher before applying updates. Download installers only from this repository's Releases page and verify the publisher is **C-Tech Solutions LLC**.
+
+The pilot uses the stable update channel so existing Depono v0.4.1 installations can discover it. It is publicly downloadable; the pilot label does not restrict access. Automatic checks normally run about once a day when the application is running. **Check now** starts an earlier check.
 
 Automatic updates can be disabled in **Help → Updates**. Manual checks remain available. A staged update applies after a permitted normal exit, or through **Restart to update**; minimizing to the tray does not install it.
 
