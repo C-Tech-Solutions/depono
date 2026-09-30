@@ -1,3 +1,33 @@
+# Depono v0.4.4 — annual licensing public pilot
+
+**Public pilot for coordinated installation, update and annual-license testing. General customer rollout remains on hold.**
+
+This release adds annual license files with yearly renewal:
+
+- Each annual license covers one calendar year. Each renewal requires a newly issued file; no three-year entitlement is granted upfront.
+- Upgrade to v0.4.4 before importing an annual license. The annual period is fixed when the license is issued, and importing it later does not restart the year.
+- Existing perpetual licenses remain valid and are preserved by the update. Annual imports cannot replace an existing perpetual entitlement.
+- License status shows the annual expiration, with a warning during the final 30 days.
+- At expiration, new production work stops while work already running can finish. Activation, help, updates, existing outputs and reports remain available. A valid renewal restores access without automatically restarting the queue.
+- Verification works offline. Keep Windows date and time correct; if a clock-error message appears, correct the clock and contact the issuer for assistance. No subscription billing or online activation is added.
+
+This release also includes automatic update checks every four hours while running, a startup check unless a recent attempt was made, and **Last checked** / **Next check** under **Help → Updates**. GitHub retry delays and your automatic-update setting are respected.
+
+## Test the update flow
+
+In your existing Depono installation, choose **Help → Updates → Check now**. Once v0.4.4 is downloaded and verified, use **Restart to update** or close the app normally when no protected work is running. Minimizing to the tray does not install the update. If automatic updates are disabled, use the signed installer below for the manual path.
+
+Existing settings, credentials, installation identity, activation and saved work are retained. Keep your current license in place during the update. Annual activation or renewal is a separate step after the supporting version is installed.
+
+## Release files
+
+- `DeponoSetup-v0.4.4-win-x64.exe`
+- `DeponoSetup-v0.4.4-win-x64.exe.sha256.txt`
+- `update-manifest.json`
+- `update-manifest.cat`
+
+Verify the installer publisher is **C-Tech Solutions LLC**. This pilot uses the stable channel so existing Depono installations can discover it. It is publicly downloadable; the pilot label does not restrict access. This release publishes no new EULA or privacy terms and does not change existing customer license rights.
+
 # Depono v0.4.2
 
 **Public pilot for coordinated installation and update testing. General customer rollout is on hold.**
