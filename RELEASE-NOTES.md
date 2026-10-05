@@ -1,3 +1,29 @@
+# Depono v0.4.5 — Windows maintenance public pilot
+
+**Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**
+
+This is a maintenance update for Windows x64:
+
+- License clock messages now refer to "System time" and "the date and time".
+- Production Prep ZIP selection and partial-result confirmation run asynchronously, using the same dialogs.
+
+Windows Help text and license entitlements are unchanged. The macOS app is not part of this public release.
+
+## Test the update flow
+
+In your existing Depono installation, choose **Help → Updates → Check now**. Once v0.4.5 is downloaded and verified, use **Restart to update** or close the app normally when no protected work is running. Minimizing to the tray does not install the update. If automatic updates are disabled, use the signed installer below for the manual path.
+
+Existing settings, credentials, installation identity, activation and saved work are retained. Keep your current license in place during the update. Automatic checks continue every four hours while running, with a startup check unless a recent attempt was made. GitHub retry delays and your automatic-update setting are respected.
+
+## Release files
+
+- `DeponoSetup-v0.4.5-win-x64.exe`
+- `DeponoSetup-v0.4.5-win-x64.exe.sha256.txt`
+- `update-manifest.json`
+- `update-manifest.cat`
+
+Verify the installer publisher is **C-Tech Solutions LLC**. This pilot uses the stable channel so existing Depono installations can discover it. It is publicly downloadable; the pilot label does not restrict access. This release publishes no new EULA or privacy terms and does not change existing customer license rights.
+
 # Depono v0.4.4 — annual licensing public pilot
 
 **Public pilot for coordinated installation, update and annual-license testing. General customer rollout remains on hold.**
