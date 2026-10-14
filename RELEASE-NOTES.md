@@ -1,3 +1,41 @@
+# Depono v0.4.6 — diagnostic export public pilot
+
+**Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**
+
+This Windows x64 update makes it easier to get help with a failed upload, ZIP extraction or Bates run without sharing client information:
+
+- **Help → Export diagnostic logs…** saves a zip file for Depono support. It explains what ran, when, and why anything failed.
+  - Before anything is written, file and folder names, matters, Clio users, computer names and Clio record IDs are replaced with codes such as `F-0012`.
+  - A final check removes anything that still looks like client information.
+  - Nothing is sent automatically.
+- **Help → Look up a support code…** shows which file, folder or matter a code from one of your exports stands for. It works only on the computer that made the export.
+- Depono now keeps a local activity log so these exports can explain failures. It stays on this computer, uses at most 100 MB and removes entries after 30 days.
+
+Send diagnostic files to Depono support directly. Do not attach them to public repository discussions or issues.
+
+The Help Center's support topic now describes the export. License entitlements are unchanged. The macOS app is not part of this public release.
+
+## Test the update flow
+
+In your existing Depono installation, choose **Help → Updates → Check now**. Once v0.4.6 is downloaded and verified, use **Restart to update** or close the app normally when no protected work is running. Minimizing to the tray does not install the update. If automatic updates are disabled, use the signed installer below for the manual path.
+
+The update keeps your existing settings, credentials, installation identity, activation and saved work. Keep your current license in place during the update.
+
+Automatic checks continue every four hours while Depono is running. There is also a check at startup, unless one was attempted recently. GitHub retry delays and your automatic-update setting are respected.
+
+## Release files
+
+- `DeponoSetup-v0.4.6-win-x64.exe`
+- `DeponoSetup-v0.4.6-win-x64.exe.sha256.txt`
+- `update-manifest.json`
+- `update-manifest.cat`
+
+Verify the installer publisher is **C-Tech Solutions LLC**.
+
+This pilot uses the stable channel so existing Depono installations can discover it. It is publicly downloadable; the pilot label does not restrict access.
+
+This release publishes no new EULA or privacy terms and does not change existing customer license rights.
+
 # Depono v0.4.5 — Windows maintenance public pilot
 
 **Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**

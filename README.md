@@ -6,7 +6,7 @@ Formerly **Clio Companion**, Depono is proprietary Windows software from C-Tech 
 
 ## Downloads
 
-**Depono v0.4.5 is a Windows maintenance update and public pilot for coordinated installation and update testing. General customer rollout is on hold.** See the [v0.4.5 release](https://github.com/C-Tech-Solutions/depono/releases/tag/v0.4.5) for downloads and [release information](RELEASE-NOTES.md) for scope. The macOS app is not part of this public release.
+**Depono v0.4.6 adds diagnostic log export and is a public pilot for coordinated installation and update testing. General customer rollout is on hold.** See the [v0.4.6 release](https://github.com/C-Tech-Solutions/depono/releases/tag/v0.4.6) for downloads and [release information](RELEASE-NOTES.md) for scope. The macOS app is not part of this public release.
 
 Depono targets Windows x64 and installs for the current Windows user. Normal installation and updates do not require administrator credentials; organizational policies may restrict installation or downloads.
 
