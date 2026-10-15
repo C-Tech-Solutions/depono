@@ -1,3 +1,40 @@
+# Depono v0.4.7 — update notice public pilot
+
+**Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**
+
+This Windows x64 update:
+
+- **Shows when an update is ready.** When a newer version has downloaded, a banner under the title bar says so and offers **Restart to update**.
+  - Restart to update waits while an upload, ZIP extraction or Bates run is in progress.
+  - The ✕ hides the banner until Depono restarts or a newer version is ready.
+  - If Depono is in the tray or behind other windows, a notification appears once per version. Click it to open Depono.
+- **Opens faster on computers that used Clio Companion before v0.4.** Depono no longer copies the old Documents audit folder again every time it starts.
+  - The first launch after this update checks that folder once more. Later launches skip it unless the folder changes.
+  - Your old audit files stay where they are.
+
+The banner first appears for the update after this one. This update still installs the usual way. The Help Center's update topic now mentions the banner. License entitlements are unchanged. The macOS app is not part of this public release.
+
+## Test the update flow
+
+In your existing Depono installation, choose **Help → Updates → Check now**. Once v0.4.7 is downloaded and verified, use **Restart to update**, or close the app normally when no protected work is running. Minimizing to the tray does not install the update. If automatic updates are disabled, use the signed installer below for the manual path.
+
+The update keeps your existing settings, credentials, installation identity, activation and saved work. Keep your current license in place during the update.
+
+Automatic checks continue every four hours while Depono is running. There is also a check at startup, unless one was attempted recently. GitHub retry delays and your automatic-update setting are respected.
+
+## Release files
+
+- `DeponoSetup-v0.4.7-win-x64.exe`
+- `DeponoSetup-v0.4.7-win-x64.exe.sha256.txt`
+- `update-manifest.json`
+- `update-manifest.cat`
+
+Verify the installer publisher is **C-Tech Solutions LLC**.
+
+This pilot uses the stable channel so existing Depono installations can discover it. It is publicly downloadable; the pilot label does not restrict access.
+
+This release publishes no new EULA or privacy terms and does not change existing customer license rights.
+
 # Depono v0.4.6 — diagnostic export public pilot
 
 **Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**
