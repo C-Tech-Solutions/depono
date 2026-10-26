@@ -1,3 +1,43 @@
+# Depono v0.4.8 — Bates output check public pilot
+
+**Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**
+
+This Windows x64 update:
+
+- **Stops Bates output from being saved to Clio Drive.** Preview now checks where the output folder really is. If it is on Clio Drive, Preview says so and the run can't start. Choose a folder on this computer, then upload the finished set to Clio with Depono.
+  - Before this update, the run copied every file to Clio Drive and then failed at the end.
+- **Stops a Bates run at the first sign of a broken output folder.** If the output folder stops working during a run, the run stops at that file instead of failing every file one by one.
+  - The partial run is kept with `.in-progress` in its name. Files it didn't reach are counted as canceled.
+  - Files from inside ZIP files stop the same way.
+- **Explains a folder path that is too long.** Depono now says: "A folder path is too long for its drive. Choose a source or destination folder closer to the top of the drive."
+
+License entitlements are unchanged. The macOS app is not part of this public release.
+
+## Test the update flow
+
+In your existing Depono installation, choose **Help → Updates → Check now**.
+
+Once v0.4.8 has downloaded and been verified, the **Update ready** banner from v0.4.7 appears. Use **Restart to update**, or close the app normally when no protected work is running.
+- Minimizing to the tray does not install the update.
+- If automatic updates are disabled, install manually with the signed installer below.
+
+The update keeps your existing settings, credentials, installation identity, activation and saved work. Keep your current license in place during the update.
+
+Automatic checks continue every four hours while Depono is running. There is also a check at startup, unless one was attempted recently. GitHub retry delays and your automatic-update setting are respected.
+
+## Release files
+
+- `DeponoSetup-v0.4.8-win-x64.exe`
+- `DeponoSetup-v0.4.8-win-x64.exe.sha256.txt`
+- `update-manifest.json`
+- `update-manifest.cat`
+
+Verify the installer publisher is **C-Tech Solutions LLC**.
+
+This pilot uses the stable channel so existing Depono installations can discover it. It is publicly downloadable; the pilot label does not restrict access.
+
+This release publishes no new EULA or privacy terms and does not change existing customer license rights.
+
 # Depono v0.4.7 — update notice public pilot
 
 **Public pilot for coordinated installation and update testing. General customer rollout remains on hold.**
