@@ -6,7 +6,7 @@ Formerly **Clio Companion**, Depono is proprietary Windows software from C-Tech 
 
 ## Downloads
 
-**Depono v0.4.8 stops Bates output from being saved to Clio Drive and is a public pilot for coordinated installation and update testing. General customer rollout is on hold.** See the [v0.4.8 release](https://github.com/C-Tech-Solutions/depono/releases/tag/v0.4.8) for downloads and [release information](RELEASE-NOTES.md) for scope. The macOS app is not part of this public release.
+**Depono v0.4.13 finds and shows updates sooner, signs in with the code Clio shows and fixes upload result counts. It is a public pilot for coordinated installation and update testing. General customer rollout is on hold.** See the [v0.4.13 release](https://github.com/C-Tech-Solutions/depono/releases/tag/v0.4.13) for downloads and [release information](RELEASE-NOTES.md) for scope. The macOS app is not part of this public release.
 
 Depono targets Windows x64 and installs for the current Windows user. Normal installation and updates do not require administrator credentials; organizational policies may restrict installation or downloads.
 
@@ -16,9 +16,9 @@ Existing Clio Companion v0.4.0 users will need to install the first public Depon
 
 Releases contain a signed setup executable, its SHA-256 checksum, update metadata and a signed Windows catalog authenticating that metadata. Depono verifies the catalog and installer publisher before applying updates. Download installers only from this repository's Releases page and verify the publisher is **C-Tech Solutions LLC**.
 
-The pilot uses the stable update channel so existing Depono v0.4.1 installations can discover it. It is publicly downloadable; the pilot label does not restrict access. In v0.4.1 and v0.4.2, automatic checks normally run about once a day when the application is running. Starting with v0.4.3, checks run every four hours while running and shortly after startup unless a check was attempted within the past hour. **Help → Updates** also shows **Last checked** and **Next check**. **Check now** starts an earlier check; GitHub-requested retry delays still apply.
+The pilot uses the stable update channel so existing Depono v0.4.1 installations can discover it. It is publicly downloadable; the pilot label does not restrict access. In v0.4.1 and v0.4.2, automatic checks normally run about once a day when the application is running. Starting with v0.4.3, checks run every four hours while running and shortly after startup unless a check was attempted within the past hour. Starting with v0.4.13, checks run every hour while running, and a failed check tries again after 15 minutes. **Help → Updates** also shows **Last checked** and **Next check**. **Check now** starts an earlier check; GitHub-requested retry delays still apply.
 
-Automatic updates can be disabled in **Help → Updates**. Manual checks remain available. A staged update applies after a permitted normal exit, or through **Restart to update**; minimizing to the tray does not install it.
+Automatic updates can be disabled in **Help → Updates**. Manual checks remain available. A staged update applies after a permitted normal exit, or through **Restart to update**; minimizing to the tray does not install it. Starting with v0.4.13, an update that is still waiting when Depono starts installs then.
 
 ## License and third-party components
 
